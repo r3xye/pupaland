@@ -25,3 +25,8 @@ The repository is the source of truth. `install.sh` creates symlinks in
 ```sh
 ./install-void-hyprland.sh
 ```
+
+This enables the Void `multilib`, `nonfree`, and `multilib/nonfree`
+repositories, then installs Hyprland, Steam runtime dependencies, Intel/Nouveau
+Mesa Vulkan packages, and the proprietary NVIDIA DKMS stack. Reboot after the
+script finishes so the NVIDIA kernel module can replace `nouveau`.
